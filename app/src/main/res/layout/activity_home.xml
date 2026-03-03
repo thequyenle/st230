@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_app" />
+
+    <!--    layoutActionBar-->
+    <FrameLayout
+        android:id="@+id/layoutActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/actionBar"
+            layout="@layout/layout_actionbar" />
+    </FrameLayout>
+
+    <!--    imvAppName-->
+    <ImageView
+        android:id="@+id/imvAppName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_marginHorizontal="35dp"
+        android:src="@drawable/img_app_name"
+        android:layout_marginTop="-50dp"
+        app:layout_constraintDimensionRatio="294:164"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutActionBar" />
+
+    <!--    scvMain-->
+    <ScrollView
+        android:id="@+id/scvMain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imvAppName">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="30dp"
+            android:layout_height="wrap_content">
+
+            <!--            glOverStart-->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glOverStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="33dp" />
+
+            <!--            glOverEnd-->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glOverEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.91" />
+
+            <!--            btnOverlay-->
+            <ImageView
+                android:id="@+id/btnOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="0dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/img_home_1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--            tv1-->
+
+
+            <!--            btnMaker-->
+            <com.dress.game.core.custom.text.DoubleStrokeTextView
+                android:id="@+id/tv1"
+                style="@style/single_marquee"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:fontFamily="@font/lobster14"
+                android:gravity="center"
+                android:clipToOutline="false"
+                android:text="@string/pride_pfp_overlay"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="@color/app"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/btnOverlay"
+                app:layout_constraintEnd_toEndOf="@+id/glOverEnd"
+                app:layout_constraintStart_toStartOf="@id/glOverStart"
+                app:layout_constraintTop_toTopOf="@+id/btnOverlay"
+                app:layout_constraintVertical_bias="0.0"
+
+                app:outerStrokeColor="@color/white"
+                app:outerStrokeWidth="4dp" />
+
+            <ImageView
+                android:id="@+id/btnMaker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="-30dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/img_home_2"
+                app:layout_constraintTop_toBottomOf="@+id/btnOverlay" />
+
+            <!--            tv2-->
+            <com.dress.game.core.custom.text.DoubleStrokeTextView
+                android:id="@+id/tv2"
+                style="@style/single_marquee"
+                android:layout_width="200dp"
+                android:layout_height="0dp"
+                android:fontFamily="@font/lobster14"
+                android:gravity="center"
+                android:text="@string/pride_maker"
+                android:textColor="#AD82DC"
+                android:textSize="24sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="-50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/btnMaker"
+                app:layout_constraintEnd_toEndOf="@+id/glCenter"
+                app:layout_constraintStart_toEndOf="@id/glOverStart"
+                app:layout_constraintTop_toTopOf="@+id/btnMaker"
+                app:outerStrokeColor="@color/white"
+                app:outerStrokeWidth="4dp" />
+
+            <!--            btnMyWork-->
+            <ImageView
+                android:id="@+id/btnRandomAll"
+                android:layout_width="0dp"
+                android:layout_height="82dp"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintEnd_toEndOf="@id/glCenter"
+                android:src="@drawable/img_random_one"
+                app:layout_constraintDimensionRatio="136:82"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnMaker" />
+
+            <!--            tv3-->
+            <com.dress.game.core.custom.text.DoubleStrokeTextView
+                android:id="@+id/tvRandomAll"
+                android:layout_width="116dp"
+                android:layout_height="35dp"
+                style="@style/single_marquee"
+                android:fontFamily="@font/lobster14"
+                android:gravity="center"
+                android:text="@string/pfp_random"
+                android:layout_marginTop="-20dp"
+                android:textColor="#D343C0"
+                android:textSize="12sp"
+                android:background="@drawable/bg_tv_random_one"
+                app:layout_constraintStart_toStartOf="@id/btnRandomAll"
+                app:layout_constraintEnd_toEndOf="@id/btnRandomAll"
+                app:layout_constraintTop_toBottomOf="@id/btnRandomAll"
+
+               />
+
+
+            <!--            btnMyWork-->
+            <ImageView
+                android:id="@+id/btnTrending"
+                android:layout_width="0dp"
+                android:layout_height="82dp"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@id/glCenter"
+                android:adjustViewBounds="true"
+                android:src="@drawable/img_home_trending"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintDimensionRatio="136:99"
+                app:layout_constraintTop_toBottomOf="@+id/btnMaker" />
+
+            <!--            tv3-->
+            <com.dress.game.core.custom.text.DoubleStrokeTextView
+                android:id="@+id/tvTrending"
+                android:layout_width="116dp"
+                android:layout_height="35dp"
+                style="@style/single_marquee"
+                android:fontFamily="@font/lobster14"
+                android:gravity="center"
+                android:text="@string/trending_tv"
+                android:textColor="#0800FF"
+                android:textSize="12sp"
+
+                android:background="@drawable/bg_tv_trending"
+                app:layout_constraintStart_toStartOf="@id/btnTrending"
+                app:layout_constraintEnd_toEndOf="@id/btnTrending"
+                app:layout_constraintTop_toTopOf="@id/tvRandomAll"
+
+                />
+
+            <!--            btnMyWork-->
+            <ImageView
+                android:id="@+id/btnMyWork"
+                android:layout_width="136dp"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/img_home_3"
+                app:layout_constraintDimensionRatio="136:99"
+                app:layout_constraintTop_toBottomOf="@+id/btnRandomAll" />
+
+            <!--            tv3-->
+            <com.dress.game.core.custom.text.DoubleStrokeTextView
+                android:id="@+id/tvMyAlbum"
+                android:layout_width="116dp"
+                android:layout_height="35dp"
+                style="@style/single_marquee"
+                android:layout_marginEnd="0dp"
+                android:fontFamily="@font/lobster14"
+                android:gravity="center"
+                android:layout_marginTop="100dp"
+                android:text="@string/my_work"
+                android:textColor="#109221"
+                android:textSize="12sp"
+                android:background="@drawable/bg_tv_mywork"
+                app:layout_constraintBottom_toBottomOf="@+id/btnMyWork"
+                app:layout_constraintEnd_toEndOf="@+id/btnMyWork"
+                app:layout_constraintStart_toStartOf="@+id/btnMyWork"
+
+                />
+
+
+            <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/glCenter"
+                app:layout_constraintGuide_percent="0.5"
+                />
+
+            <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/glCenterRight"
+                app:layout_constraintGuide_percent="0.35"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <!--    flNativeCollab-->
+    <FrameLayout
+        android:id="@+id/flNativeCollab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

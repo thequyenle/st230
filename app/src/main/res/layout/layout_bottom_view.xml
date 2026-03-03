@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="22dp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/lnlShareButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!--            btnWhatsapp-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btnWhatsapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2dp"
+            android:layout_weight="1"
+            android:padding="2dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:scaleType="fitXY"
+                app:cardCornerRadius="102dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/transparent"
+                app:cardBackgroundColor="@color/transparent"
+
+                app:layout_constraintBottom_toBottomOf="@+id/lnlInLeft"
+                app:layout_constraintEnd_toEndOf="@+id/lnlInLeft"
+                app:layout_constraintStart_toStartOf="@+id/lnlInLeft"
+                app:layout_constraintTop_toTopOf="@+id/lnlInLeft">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bg_btn_bottom" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <!--                        lnlInLeft-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/lnlInLeft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <!--                        tvDelete-->
+                <TextView
+                    android:id="@+id/tvShare"
+                    style="@style/single_marquee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="6dp"
+                    android:fontFamily="@font/lobster14"
+                    android:text="@string/share"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--            btnTelegram-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btnTelegram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2dp"
+            android:layout_weight="1"
+            android:padding="2dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:scaleType="fitXY"
+                app:cardCornerRadius="102dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/transparent"
+
+                app:strokeColor="@color/transparent"
+                app:layout_constraintBottom_toBottomOf="@+id/lnlInRight"
+                app:layout_constraintEnd_toEndOf="@+id/lnlInRight"
+                app:layout_constraintStart_toStartOf="@+id/lnlInRight"
+                app:layout_constraintTop_toTopOf="@+id/lnlInRight">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bg_btn_bottom" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <!--                        lnlInRight-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/lnlInRight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <!--                        tvDownload-->
+                <TextView
+                    android:id="@+id/tvDownload"
+                    style="@style/single_marquee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="6dp"
+                    android:fontFamily="@font/lobster14"
+                    android:text="@string/download"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--            btnDelete-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginTop="14dp"
+        android:padding="2dp"
+        android:visibility="visible"
+        android:background="@drawable/bg_btn_delete"
+        app:layout_constraintTop_toBottomOf="@id/lnlShareButtons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!--                        lnlInBot-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/lnlInBot"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/tvDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="6dp"
+                android:layout_marginStart="14dp"
+                android:fontFamily="@font/lobster14"
+                android:text="@string/delete"
+                android:textColor="#D20000"
+                android:textSize="16sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

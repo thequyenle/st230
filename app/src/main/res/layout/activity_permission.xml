@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.permission.PermissionActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_app"
+ />
+
+    <!-- layoutActionBar -->
+    <FrameLayout
+        android:id="@+id/layoutActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/actionBar"
+            layout="@layout/layout_actionbar" />
+    </FrameLayout>
+
+    <!-- imgPermission -->
+    <ImageView
+        android:id="@+id/imgPermission"
+        android:layout_width="233dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="0dp"
+        android:src="@drawable/img_permission"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutActionBar" />
+
+    <!-- txtPermission -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/txtPermission"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginHorizontal="57dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:fontFamily="@font/londrina_solid_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgPermission">
+
+        <TextView
+            android:id="@+id/txtPer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lobster14"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/app"
+            tools:text="text='Allow Permissions'"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- scvButton -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/tvContinue"
+        app:layout_constraintTop_toBottomOf="@id/txtPermission">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:orientation="vertical">
+
+            <!-- btnStorage-->
+            <RelativeLayout
+                android:id="@+id/btnStorage"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/bg_frame_per">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/lobster14"
+                    android:gravity="start"
+                    android:text="@string/storage"
+                    android:textColor="@color/app"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/swPermission"
+                    android:layout_width="52dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginVertical="15dp"
+                    android:layout_marginEnd="25dp"
+                    android:src="@drawable/ic_sw_off" />
+            </RelativeLayout>
+
+            <!-- btnNotification-->
+            <RelativeLayout
+                android:id="@+id/btnNotification"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_frame_per">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/lobster14"
+                    android:gravity="start"
+                    android:text="@string/notification"
+                    android:textColor="@color/app"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/swNotification"
+                    android:layout_width="52dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginVertical="15dp"
+                    android:layout_marginEnd="25dp"
+                    android:src="@drawable/ic_sw_on" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- tvContinue -->
+    <TextView
+        android:id="@+id/tvContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:fontFamily="@font/lobster14"
+        android:gravity="center"
+        android:text="@string/continue_per"
+        android:textColor="@color/app"
+        android:textSize="20sp"
+        android:layout_marginBottom="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/native_ads"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+<!--        <include layout="@layout/ads_native_big_btn_bottom_shimmer" />-->
+
+<!--    </FrameLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

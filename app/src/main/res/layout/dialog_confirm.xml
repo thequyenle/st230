@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--    flOutSide-->
+    <FrameLayout
+        android:id="@+id/flOutSide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--        layoutMain-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/layoutMain"
+            app:cardBackgroundColor="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:id="@+id/containerDialog"
+                android:layout_width="311dp"
+                android:layout_height="152dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/bg_dialog_delete_exit"
+                android:orientation="vertical">
+
+                <!--            ConstraintLayout bọc tvTitle (Top)-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="0dp"
+                        android:layout_marginHorizontal="70dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/chewy_regular"
+                        android:gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:paddingVertical="5dp"
+                        android:text="@string/delete"
+                        style="@style/single_marquee"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!--            tvDescription-->
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:paddingHorizontal="24dp"
+                    android:text="@string/are_you_sure_want_to_delete_this_item"
+                    android:textColor="#FF008C"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="45dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="23dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!--                    btnNo-->
+
+                    <!--                    btnYes-->
+                    <TextView
+                        android:id="@+id/btnNo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="center"
+                        android:paddingVertical="6dp"
+                        android:text="@string/no"
+                        android:textColor="#FF008C"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/btnYes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="center"
+                        android:paddingVertical="9dp"
+                        android:text="@string/yes"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <!--            ConstraintLayout bọc tvTitle (Bottom)-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+</layout>

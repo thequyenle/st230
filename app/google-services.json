@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "345570565091",
+    "project_id": "st217-pony-oc-maker",
+    "storage_bucket": "st217-pony-oc-maker.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345570565091:android:6fd6ed13936d6aee261ed6",
+        "android_client_info": {
+          "package_name": "com.dress.game"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0e7UVrMoH02ynePesy9UUIUDgiVSY4as"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

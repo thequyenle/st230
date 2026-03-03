@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="app">#D343C0</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="orange_F6">#F68300</color>
+    <color name="purple_F0">#F091F5</color>
+    <color name="red_BA">#BA0101</color>
+    <color name="yellow_F6">#F6CD46</color>
+
+    <color name="color_1">#E2D2D2</color>
+    <color name="color_2">#DCD5FF</color>
+    <color name="color_3">#B7E9F8</color>
+    <color name="color_4">#FFB4B9</color>
+    <color name="color_5">#EBAEF1</color>
+    <color name="color_6">#F5D0C8</color>
+    <color name="color_7">#FDE6C4</color>
+    <color name="color_8">#D2ECE9</color>
+    <color name="color_9">#EAE5E1</color>
+    <color name="color_10">#EAE5E1</color>
+    <color name="color_11">#FFCDFE</color>
+    <color name="color_12">#FFFED2</color>
+    <color name="color_13">#AFCFFE</color>
+    <color name="color_14">#CBE7DB</color>
+    <color name="color_15">#C94D91</color>
+    <color name="color_16">#57B2D9</color>
+    <color name="color_17">#FE0037</color>
+    <color name="color_18">#5AD7C3</color>
+    <color name="color_19">#BD773B</color>
+    <color name="colorapp">#A1CCEF</color>
+
+    <color name="native_bg_ad">#3AB8BDFD</color>
+    <color name="native_bg_btn">#AB5BFF</color>
+    <color name="native_btn_bg">#AB5BFF</color>
+    <color name="native_collap_btn_bg">#AB5BFF</color>
+    <color name="color_app">#A1CCEF</color>
+    <color name="blue_app">#A1CCEF</color>
+    <color name="native_bg">#3BEEE6FD</color>
+    <color name="native_bg_view">#66AC0506</color>
+    <color name="colorPrimary">#33393A</color>
+    <color name="native_text_color_btn">#FFFFFF</color>
+    <color name="native_text_color">#FFFFFF</color>
+    <color name="native_text_color_intro">#AB5BFF</color>
+    <color name="native_text_color_black">#000000</color>
+    <color name="dark">#000000</color>
+    <color name="purple_text">#470092</color>
+
+    <color name="pride_btn_inactive">#B3B3B3</color>
+    <color name="pride_btn_active">#4EABDA</color>
+</resources>

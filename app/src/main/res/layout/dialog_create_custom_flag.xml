@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/bg_16_solid_white_stroke_brown">
+
+            <!-- Close button -->
+            <ImageView
+                android:id="@+id/btnClose"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="14dp"
+                android:src="@drawable/ic_close_color_pick"
+                app:tint="#000000"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/lobster14"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:text="@string/pride_create_custom_flag"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"
+                 />
+
+            <!-- Flag preview bar -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/flagPreviewCard"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="48dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <View
+                    android:id="@+id/flagPreviewBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvColorCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="8sp"
+                android:textColor="#807E7E"
+                android:text="1 color"
+                app:layout_constraintTop_toBottomOf="@id/flagPreviewCard"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Flag Name -->
+            <TextView
+                android:id="@+id/flagName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="10sp"
+                android:textColor="#000000"
+                android:text="@string/pride_flag_name"
+                app:layout_constraintTop_toBottomOf="@id/tvColorCount"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/etFlagName"
+                android:layout_width="0dp"
+                android:layout_height="26dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_16_stroke_white"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:textColor="#222222"
+                android:hint="@string/pride_enter_name"
+                android:textColorHint="#BBBBBB"
+                android:drawablePadding="4dp"
+                android:paddingHorizontal="12dp"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                app:layout_constraintTop_toBottomOf="@id/flagName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Colors header -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:text="@string/pride_colors"
+                app:layout_constraintTop_toBottomOf="@id/etFlagName"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/btnAddColor"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/plus"
+                app:layout_constraintTop_toBottomOf="@id/etFlagName"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Color list -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvColors"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="10dp"
+                tools:listitem="@layout/item_custom_color"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@id/btnAddColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Create button -->
+            <LinearLayout
+                android:id="@+id/btnCreate"
+                android:layout_width="76dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_btn_pride_continue"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/rvColors"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lobster14"
+                    android:textSize="11sp"
+                    android:textColor="@color/white"
+                    android:text="@string/pride_create" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</layout>

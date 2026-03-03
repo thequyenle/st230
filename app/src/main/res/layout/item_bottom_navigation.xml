@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_marginVertical="15dp"
+    android:layout_marginHorizontal="4dp"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <!--    cvContent-->
+    <FrameLayout
+        android:id="@+id/cvContent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        android:background="@drawable/bg_uslt_navi_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <!--            imvImage-->
+
+        <ImageView
+            android:id="@+id/imvImage"
+            android:clipToOutline="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:scaleType="centerCrop" />
+        <!--            imvImage-->
+        <ImageView
+            android:id="@+id/imvImageBG"
+            android:clipToOutline="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:scaleType="centerCrop" />
+
+
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Blue dot at position 1 (left) -->
+    <item
+        android:width="9dp"
+        android:height="9dp"
+        android:left="0dp">
+        <shape android:shape="oval">
+            <solid android:color="#A1CCEF"/>
+        </shape>
+    </item>
+
+    <!-- Blue dot at position 2 (middle) -->
+    <item
+        android:width="9dp"
+        android:height="9dp"
+        android:left="13dp">
+        <shape android:shape="oval">
+            <solid android:color="#A1CCEF"/>
+        </shape>
+    </item>
+
+    <!-- Red dot at position 3 (right) -->
+    <item
+        android:width="9dp"
+        android:height="9dp"
+        android:left="26dp">
+        <shape android:shape="oval">
+            <solid android:color="#BA0101"/>
+        </shape>
+    </item>
+</layer-list>

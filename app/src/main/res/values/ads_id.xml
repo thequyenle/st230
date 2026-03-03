@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_id" translatable="false"></string>
+    <string name="inter_splash" translatable="false"></string>
+    <string name="inter_all" translatable="false"></string>
+    <string name="native_language" translatable="false"></string>
+    <string name="native_intro" translatable="false"></string>
+    <string name="native_per" translatable="false"></string>
+    <string name="inter_per" translatable="false"></string>
+    <string name="native_cl_home" translatable="false"></string>
+    <string name="native_splash" translatable="false"></string>
+    <string name="native_cl_category" translatable="false"></string>
+    <string name="native_category" translatable="false"></string>
+    <string name="native_cl_bg" translatable="false"></string>
+    <string name="native_myWork" translatable="false"></string>
+    <string name="native_cl_myWork" translatable="false"></string>
+    <string name="native_creation" translatable="false"></string>
+    <string name="native_dialog_custom" translatable="false"></string>
+    <string name="native_cl_custom" translatable="false"></string>
+    <string name="native_cl_trending" translatable="false"></string>
+    <string name="native_cl_detail" translatable="false"></string>
+    <string name="native_cl_success" translatable="false"></string>
+    <string name="open_resume" translatable="false"></string>
+    <string name="native_all" translatable="false"></string>
+</resources>

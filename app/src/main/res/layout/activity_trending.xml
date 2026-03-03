@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.trending.TrendingActivity"
+    android:background="@drawable/bg_app">
+
+    <!-- layoutActionBar -->
+    <FrameLayout
+        android:id="@+id/layoutActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/actionBar"
+            layout="@layout/layout_actionbar" />
+    </FrameLayout>
+
+
+     <!--    cvImage-->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="46dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintDimensionRatio="267:346"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="28dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutActionBar"
+        app:strokeColor="@color/transparent"
+        app:cardCornerRadius="16dp"
+        tools:context=".ui.trending.TrendingActivity"
+        >
+
+        <!--        imvImage-->
+        <ImageView
+            android:id="@+id/imvImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center" />
+        
+        <ImageView
+            android:id="@+id/btnEdit"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_edit_trending"
+            android:layout_gravity="end|top"
+            android:layout_marginEnd="14dp"
+            android:layout_marginTop="19dp"
+            android:visibility="visible"
+            />
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <FrameLayout
+        android:id="@+id/btnGenerate"
+        android:layout_width="192dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="84dp"
+        app:layout_constraintDimensionRatio="192:59"
+        android:layout_marginTop="22dp"
+        app:layout_constraintTop_toBottomOf="@id/cvImage"
+        android:background="@drawable/bg_frame_random">
+        <ImageView
+            android:id="@+id/dices"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:src="@drawable/dices"
+            android:layout_marginStart="16dp"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/tvGenerate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/generate"
+            android:fontFamily="@font/lobster14"
+            android:textColor="@color/app"
+            style="@style/single_marquee"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="51dp"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:textSize="16sp"/>
+        
+    </FrameLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" translatable="false">Pony OC: Pony Avatar Maker</string>
+
+    <string name="go_to_setting_message">ऐप को इस अनुमति की आवश्यकता है</string>
+    <string name="settings">सेटिंग</string>
+    <string name="this_action_can_contain_ads">इस क्रिया में विज्ञापन हो सकते हैं</string>
+    <string name="not_select_lang">कृपया एक भाषा चुनें</string>
+    <string name="next">अगला</string>
+    <string name="language">भाषा</string>
+
+    <string name="title_1">अपना परफेक्ट प्राइड बनाएं</string>
+    <string name="title_2">चरित्र विविधता</string>
+    <string name="title_3">विभिन्न आइटम</string>
+
+    <string name="permission">अनुमति</string>
+    <string name="storage">संग्रहण</string>
+    <string name="continue_per">जारी रखें</string>
+    <string name="notification">सूचना</string>
+    <string name="no_internet">इंटरनेट नहीं है</string>
+    <string name="granted_notification">सूचना अनुमति दी गई</string>
+    <string name="granted_storage">संग्रहण अनुमति दी गई</string>
+    <string name="allow">अनुमति दें</string>
+    <string name="to_access">आपके डिवाइस पर फ़ोटो एक्सेस करने के लिए</string>
+    <string name="to_access_13">आपके डिवाइस पर सूचना एक्सेस करने के लिए</string>
+
+    <string name="rate_us">हमें रेट करें</string>
+    <string name="share_app">ऐप शेयर करें</string>
+    <string name="privacy_policy"><![CDATA[गोपनीयता और नीति]]></string>
+
+    <string name="zero_star_title">क्या आपको ऐप पसंद है?</string>
+    <string name="zero_star">हमें अपना अनुभव बताएं</string>
+
+    <string name="one_star_title">ओह, नहीं!</string>
+    <string name="one_star">कृपया हमें कुछ फीडबैक दें</string>
+
+    <string name="two_star_title">ओह, नहीं!</string>
+    <string name="two_star">कृपया हमें कुछ फीडबैक दें</string>
+
+    <string name="three_star_title">ओह, नहीं!</string>
+    <string name="three_star">कृपया हमें कुछ फीडबैक दें</string>
+
+    <string name="four_star_title">हम आपसे भी प्यार करते हैं!</string>
+    <string name="four_star">आपके फीडबैक के लिए धन्यवाद</string>
+
+    <string name="five_star_title">हम आपसे भी प्यार करते हैं!</string>
+    <string name="five_star">आपके फीडबैक के लिए धन्यवाद</string>
+
+    <string name="rate_us_0">आपने अभी तक रेट नहीं किया!</string>
+    <string name="rate">रेट करें</string>
+    <string name="exit">बाहर निकलें</string>
+    <string name="have_rated">हमारे ऐप को रेट करने के लिए धन्यवाद</string>
+    <string name="share">शेयर करें</string>
+    <string name="delete">हटाएं</string>
+    <string name="download">डाउनलोड करें</string>
+    <string name="yes">हाँ</string>
+    <string name="no">नहीं</string>
+    <string name="ok">ठीक है</string>
+    <string name="wait_a_minute">एक पल रुकें</string>
+    <string name="reset">रीसेट करें</string>
+    <string name="download_success">Pony OC: Pony Avatar Maker एल्बम में डाउनलोड सफल</string>
+    <string name="please_check_your_internet">कृपया अपना इंटरनेट जांचें</string>
+    <string name="please_select_an_image">कृपया एक छवि चुनें</string>
+    <string name="error">त्रुटि</string>
+    <string name="an_error_occurred">एक त्रुटि हुई, कृपया बाद में पुनः प्रयास करें।</string>
+    <string name="image_has_been_saved_successfully">प्रोजेक्ट सफलतापूर्वक सहेजा गया!</string>
+    <string name="save">सहेजें</string>
+    <string name="are_you_sure_want_to_delete_this_item">क्या आप हटाना चाहते हैं?</string>
+    <string name="downloading">डाउनलोड हो रहा है...</string>
+    <string name="successfully">सफलतापूर्वक</string>
+    <string name="download_failed_please_try_again_later">डाउनलोड विफल, कृपया बाद में पुनः प्रयास करें!</string>
+    <string name="save_failed_please_try_again">सहेजना विफल, कृपया पुनः प्रयास करें!</string>
+    <string name="delete_failed_please_try_again">हटाना विफल, कृपया पुनः प्रयास करें!</string>
+    <string name="my_creation">मेरी रचना</string>
+    <string name="delete_your_customize">अपना कस्टमाइज़ेशन हटाएं</string>
+    <string name="are_you_sure_you_want_to_delete_the_image">क्या आप वाकई छवि हटाना चाहते हैं?</string>
+    <string name="haven_t_saved_it_yet_do_you_want_to_exit">अभी तक सहेजा नहीं, क्या आप बाहर निकलना चाहते हैं?</string>
+    <string name="change_your_whole_design_are_you_sure">क्या आप रीसेट करना चाहते हैं?</string>
+    <string name="character_maker">पिक्सेल मेकर</string>
+    <string name="no_item_here">यहाँ कोई आइटम नहीं</string>
+    <string name="quick_maker">क्विक मेकर</string>
+    <string name="my_character">मेरा पिक्सेल</string>
+    <string name="category">पिक्सेल मेकर</string>
+
+    <string name="hello_blank_fragment">नमस्ते खाली फ्रैगमेंट</string>
+    <string name="no_item_space">कोई वर्तमान इतिहास नहीं</string>
+    <string name="add_to_whatsapp">WhatsApp में जोड़ें</string>
+    <string name="add_to_telegram">Telegram में जोड़ें</string>
+    <string name="my_avatar">मेरा अवतार</string>
+    <string name="my_design">मेरा डिज़ाइन</string>
+    <string name="my_album">मेरा एल्बम</string>
+    <string name="no_app_found_to_handle_this_action">इस क्रिया के लिए कोई ऐप नहीं मिला</string>
+    <string name="invalid_action_msg">एप्लिकेशन इंस्टॉल नहीं है</string>
+    <string name="invalid_action">त्रुटि</string>
+    <string name="limit_3_items">स्टिकर बनाने के लिए कम से कम 3 आइटम आवश्यक हैं</string>
+    <string name="limit_30_items">अधिकतम 30 आइटम ही जोड़े जा सकते हैं</string>
+    <string name="create_package_name">पैकेज नाम बनाएं</string>
+    <string name="enter_your_package_name">अपना पैकेज नाम दर्ज करें</string>
+    <string name="please_enter_your_package_name">कृपया अपना पैकेज नाम दर्ज करें!</string>
+    <string name="background">पृष्ठभूमि</string>
+    <string name="image">छवि</string>
+    <string name="color">रंग</string>
+    <string name="add_image">छवि जोड़ें</string>
+    <string name="sticker">स्टिकर</string>
+    <string name="speech_bubbles">स्पीच बबल्स</string>
+    <string name="text">टेक्स्ट</string>
+    <string name="type_your_content">अपना कंटेंट टाइप करें...</string>
+    <string name="font">फ़ॉन्ट</string>
+    <string name="choose_color">रंग चुनें</string>
+    <string name="done">हो गया</string>
+    <string name="null_edt">कृपया टेक्स्ट दर्ज करें</string>
+    <string name="input_text">टेक्स्ट दर्ज करें</string>
+    <string name="hello_world">अपना कंटेंट टाइप करें...</string>
+    <string name="no_item_desgin">कोई वर्तमान इतिहास नहीं</string>
+    <string name="my_character_in">मेरा काम</string>
+    <string name="quick_maker_in">क्विक मिक्स</string>
+    <string name="exit_add">अपनी पृष्ठभूमि से बाहर निकलें</string>
+    <string name="exit_bg">अपनी पृष्ठभूमि से बाहर निकलें</string>
+    <string name="loading">लोड हो रहा है</string>
+    <string name="internet_required_for_more_characters">अधिक चरित्रों के लिए इंटरनेट आवश्यक है</string>
+    <string name="music">संगीत</string>
+    <string name="my_work">मेरा काम</string>
+    <string name="pride_maker">प्राइड OC मेकर</string>
+    <string name="trending">ट्रेंडिंग कस्टम</string>
+    <string name="my_pony">मेरा पोनी</string>
+    <string name="do_you_want_to_exit">क्या आप बाहर निकलना चाहते हैं?</string>
+    <string name="pfp_random">प्राइड PFP रैंडम</string>
+    <string name="trending_tv">प्राइड PFP ट्रेंडिंग</string>
+    <string name="pride_pfp_overlay">मेरा ओवरले</string>
+    <string name="generate">रैंडम जेनरेट करें</string>
+
+    <string name="pride_choose_image">छवि चुनें</string>
+    <string name="pride_crop_image">छवि क्रॉप करें</string>
+    <string name="pride_choose_flags">अपने प्राइड फ्लैग चुनें</string>
+    <string name="pride_choose_layout">लेआउट स्टाइल चुनें</string>
+    <string name="pride_choose_design">डिज़ाइन स्टाइल चुनें</string>
+    <string name="pride_result_title">आपकी प्राइड प्रोफाइल पिक्चर तैयार है</string>
+    <string name="pride_result_subtitle">अपनी व्यक्तिगत प्रोफाइल पिक्चर से अपना प्राइड दिखाएं</string>
+    <string name="pride_choose_image_hint">संपादित करने के लिए एक छवि चुनें</string>
+    <string name="pride_no_image_uploaded">कोई छवि अपलोड नहीं हुई</string>
+    <string name="pride_click_to_select_different">अलग छवि चुनने के लिए क्लिक करें</string>
+    <string name="pride_select_up_to_4">अपनी प्रोफाइल पिक्चर में जोड़ने के लिए 4 तक फ्लैग चुनें</string>
+    <string name="pride_selected_flags">चुने गए फ्लैग</string>
+    <string name="pride_my_custom">मेरा कस्टम फ्लैग</string>
+    <string name="pride_flags_section">प्राइड फ्लैग</string>
+    <string name="pride_layout_subtitle">चुनें कि फ्लैग आपकी छवि पर कैसे रखे जाएं</string>
+    <string name="pride_layout_circle">सर्कल</string>
+    <string name="pride_layout_circle_desc">छवि के चारों ओर गोलाकार बॉर्डर के रूप में फ्लैग लागू करें</string>
+    <string name="pride_layout_square">वर्ग</string>
+    <string name="pride_layout_square_desc">छवि के चारों ओर चौकोर बॉर्डर के रूप में फ्लैग लागू करें</string>
+    <string name="pride_layout_background">पृष्ठभूमि</string>
+    <string name="pride_layout_background_desc">मूल छवि की पारदर्शिता को फ्लैग के साथ मिलाएं</string>
+    <string name="pride_design_subtitle">अपने प्राइड फ्लैग के लिए दृश्य शैली चुनें</string>
+    <string name="pride_image_zoom">इमेज ज़ूम</string>
+    <string name="image_scale">इमेज स्केल</string>
+    <string name="pride_default_zoom">डिफ़ॉल्ट इमेज ज़ूम</string>
+    <string name="pride_default_ring">डिफ़ॉल्ट रिंग स्केल</string>
+    <string name="pride_center_image">इमेज पोज़ीशन केंद्रित करें</string>
+    <string name="pride_flag_mode_ring">फ्लैग मोड: इमेज</string>
+    <string name="pride_previous"> पिछला</string>
+    <string name="pride_start_over">फिर से शुरू करें</string>
+    <string name="pride_continue">जारी रखें</string>
+    <string name="pride_create_another">दूसरा बनाएं</string>
+    <string name="pride_my_work">मेरा काम</string>
+    <string name="pride_center">केंद्र</string>
+    <string name="pride_create_custom_flag">कस्टम फ्लैग बनाएं</string>
+    <string name="pride_flag_name">फ्लैग का नाम</string>
+    <string name="pride_enter_name">नाम दर्ज करें</string>
+    <string name="pride_colors">रंग</string>
+    <string name="pride_create">बनाएं</string>
+    <string name="pride_select_at_least_one">कृपया कम से कम एक फ्लैग चुनें</string>
+    <string name="pride_max_colors_reached">अधिकतम 10 रंग की अनुमति है</string>
+    <string name="my_pride">मेरा प्राइड</string>
+</resources>
