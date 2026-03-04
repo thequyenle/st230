@@ -11,169 +11,157 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:background="@drawable/bg_app"
- />
+        android:background="@drawable/bg_app" />
 
-    <!-- layoutActionBar -->
-    <FrameLayout
-        android:id="@+id/layoutActionBar"
-        android:layout_width="match_parent"
+    <!-- White card container — wraps all content tightly -->
+    <LinearLayout
+        android:id="@+id/cardContainer"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/bg_card_language"
+        android:orientation="vertical"
+        android:paddingTop="12dp"
+        android:paddingBottom="20dp"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <include
-            android:id="@+id/actionBar"
-            layout="@layout/layout_actionbar" />
-    </FrameLayout>
+        <!-- imgPermission -->
+        <ImageView
+            android:id="@+id/imgPermission"
+            android:layout_width="164dp"
+            android:layout_marginTop="46dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img_permission" />
 
-    <!-- imgPermission -->
-    <ImageView
-        android:id="@+id/imgPermission"
-        android:layout_width="233dp"
-        android:layout_height="166dp"
-        android:layout_marginTop="8dp"
-        android:adjustViewBounds="true"
-        android:layout_marginStart="0dp"
-        android:src="@drawable/img_permission"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layoutActionBar" />
-
-    <!-- txtPermission -->
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/txtPermission"
-        android:layout_width="match_parent"
-        android:layout_height="69dp"
-        android:layout_marginHorizontal="57dp"
-        android:layout_marginTop="0dp"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:fontFamily="@font/londrina_solid_regular"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imgPermission">
-
-        <TextView
-            android:id="@+id/txtPer"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/lobster14"
-            android:gravity="center"
-            android:paddingHorizontal="10dp"
-            android:textSize="16sp"
-            android:textColor="@color/app"
-            tools:text="text='Allow Permissions'"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.4"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <!-- scvButton -->
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="4dp"
-        android:scrollbars="none"
-        app:layout_constraintBottom_toTopOf="@+id/tvContinue"
-        app:layout_constraintTop_toBottomOf="@id/txtPermission">
-
-        <LinearLayout
+        <!-- txtPermission -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/txtPermission"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-            android:orientation="vertical">
+            android:layout_marginTop="0dp"
+            android:layout_marginHorizontal="8dp"
+            android:fontFamily="@font/londrina_solid_regular">
 
-            <!-- btnStorage-->
-            <RelativeLayout
-                android:id="@+id/btnStorage"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:background="@drawable/bg_frame_per">
+            <TextView
+                android:id="@+id/txtPer"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/cherry_bomb_regular"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/frame_tv_per"
+                android:textColor="@color/white"
+                tools:text="Allow Permissions"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="16dp"
-                    android:fontFamily="@font/lobster14"
-                    android:gravity="start"
-                    android:text="@string/storage"
-                    android:textColor="@color/app"
-                    android:textSize="16sp" />
+        <!-- btnStorage -->
+        <RelativeLayout
+            android:id="@+id/btnStorage"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_frame_per">
 
-                <ImageView
-                    android:id="@+id/swPermission"
-                    android:layout_width="52dp"
-                    android:layout_height="26dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginVertical="15dp"
-                    android:layout_marginEnd="25dp"
-                    android:src="@drawable/ic_sw_off" />
-            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/cherry_bomb_regular"
+                android:gravity="start"
+                android:text="@string/storage"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
 
-            <!-- btnNotification-->
-            <RelativeLayout
-                android:id="@+id/btnNotification"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/bg_frame_per">
+            <ImageView
+                android:id="@+id/swPermission"
+                android:layout_width="40dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="25dp"
+                android:src="@drawable/ic_sw_off" />
+        </RelativeLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="16dp"
-                    android:fontFamily="@font/lobster14"
-                    android:gravity="start"
-                    android:text="@string/notification"
-                    android:textColor="@color/app"
-                    android:textSize="16sp" />
+        <!-- btnNotification -->
+        <RelativeLayout
+            android:id="@+id/btnNotification"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_frame_per">
 
-                <ImageView
-                    android:id="@+id/swNotification"
-                    android:layout_width="52dp"
-                    android:layout_height="26dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginVertical="15dp"
-                    android:layout_marginEnd="25dp"
-                    android:src="@drawable/ic_sw_on" />
-            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/cherry_bomb_regular"
+                android:gravity="start"
+                android:text="@string/notification"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
 
-        </LinearLayout>
+            <ImageView
+                android:id="@+id/swNotification"
+                android:layout_width="40dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="25dp"
+                android:src="@drawable/ic_sw_on" />
+        </RelativeLayout>
+        
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
 
-    </ScrollView>
+    </LinearLayout>
+
+    <!-- tvPermission badge — đặt sau cardContainer để render đè lên top card -->
+    <TextView
+        android:id="@+id/tvPermission"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="66dp"
+        android:background="@drawable/bg_text_lang"
+        android:elevation="4dp"
+        android:fontFamily="@font/cherry_bomb_regular"
+        android:gravity="center"
+        android:text="@string/permission"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintDimensionRatio="164:56"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- tvContinue -->
     <TextView
         android:id="@+id/tvContinue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:fontFamily="@font/lobster14"
+        android:layout_marginBottom="90dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/cherry_bomb_regular"
         android:gravity="center"
         android:text="@string/continue_per"
         android:textColor="@color/app"
         android:textSize="20sp"
-        android:layout_marginBottom="90dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-<!--    <FrameLayout-->
-<!--        android:id="@+id/native_ads"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent">-->
-
-<!--        <include layout="@layout/ads_native_big_btn_bottom_shimmer" />-->
-
-<!--    </FrameLayout>-->
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

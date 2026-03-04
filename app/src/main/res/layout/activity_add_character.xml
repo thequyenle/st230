@@ -168,7 +168,7 @@
                     style="@style/single_marquee"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:fontFamily="@font/lobster14"
+                    android:fontFamily="@font/cherry_bomb_regular"
                     android:gravity="center"
                     android:text="@string/image"
                     android:textColor="@color/white"
@@ -221,7 +221,7 @@
                     style="@style/single_marquee"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:fontFamily="@font/lobster14"
+                    android:fontFamily="@font/cherry_bomb_regular"
                     android:gravity="center"
                     android:text="@string/color"
                     android:textColor="#AB5BFF"
@@ -289,7 +289,7 @@
                 android:gravity="center"
                 android:textColor="#AB5BFF"
                 android:layout_marginTop="7dp"
-                android:fontFamily="@font/lobster14"
+                android:fontFamily="@font/cherry_bomb_regular"
                 android:textSize="20sp" />
 
             <!--            rcvSticker-->
@@ -324,7 +324,7 @@
                 android:gravity="center"
                 android:textColor="#AB5BFF"
                 android:layout_marginTop="12dp"
-                android:fontFamily="@font/lobster14"
+                android:fontFamily="@font/cherry_bomb_regular"
                 android:textSize="20sp" />
 
             <!--            rcvSticker-->
@@ -372,7 +372,7 @@
                         android:text="@string/text"
                         android:gravity="center"
                         android:textColor="#AB5BFF"
-                        android:fontFamily="@font/lobster14"
+                        android:fontFamily="@font/cherry_bomb_regular"
                         android:textSize="20sp" />
 
                     <!--                    btnDoneText-->

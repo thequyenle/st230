@@ -172,4 +172,9 @@
     <string name="pride_select_at_least_one">कृपया कम से कम एक फ्लैग चुनें</string>
     <string name="pride_max_colors_reached">अधिकतम 10 रंग की अनुमति है</string>
     <string name="my_pride">मेरा प्राइड</string>
+    <string name="play">PLAY</string>
+    <string name="lucki_roll">LUCKY ROLL</string>
+    <string name="quick_mix">QUICK MIX</string>
+    <string name="creation">CREATION</string>
+    <string name="back">BACK</string>
 </resources>

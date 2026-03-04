@@ -48,7 +48,7 @@
                 android:id="@+id/tvFlagName"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/lobster14"
+                android:fontFamily="@font/cherry_bomb_regular"
                 android:gravity="center"
                 android:textSize="11sp"
                 android:textColor="#333333"

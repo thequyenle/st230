@@ -46,7 +46,7 @@
                 android:layout_marginStart="16dp"
                 android:fontFamily="@font/cherry_bomb_regular"
                 android:gravity="start"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imvFlag"
                 app:layout_constraintEnd_toStartOf="@+id/btnRadio"
                 app:layout_constraintStart_toEndOf="@+id/imvFlag"

@@ -9,14 +9,41 @@
     <!--    btnActionBarLeft-->
     <ImageView
         android:id="@+id/btnActionBarLeft"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
+        android:layout_width="80dp"
+        android:layout_height="44dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="10dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <!--            btnActionBarRightText-->
+    <FrameLayout
+        android:id="@+id/btnActionBarLeftText"
+        android:layout_width="80dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_next"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/btnActionBarRight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnActionBarRight">
+
+        <TextView
+            android:id="@+id/tvLeftText"
+            style="@style/single_marquee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="5dp"
+            android:fontFamily="@font/londrina_solid_regular"
+            android:gravity="center"
+            android:text="@string/back"
+            android:visibility="visible"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </FrameLayout>
 
 
 
@@ -108,9 +135,9 @@
     <!--    btnActionBarCenter-->
     <ImageView
         android:id="@+id/btnActionBarCenter"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="@drawable/ic_reset"
         android:visibility="invisible"
         tools:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/btnActionBarLeft"
@@ -165,8 +192,8 @@
     <!--    btnActionBarRight-->
     <ImageView
         android:id="@+id/btnActionBarRight"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
+        android:layout_width="80dp"
+        android:layout_height="44dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="0dp"
         android:background="?attr/selectableItemBackgroundBorderless"
@@ -210,8 +237,8 @@
     <!--            btnActionBarRightText-->
     <FrameLayout
         android:id="@+id/btnActionBarRightText"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
+        android:layout_width="80dp"
+        android:layout_height="44dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/ic_next"
         android:visibility="gone"
@@ -228,8 +255,8 @@
             android:layout_marginHorizontal="5dp"
             android:fontFamily="@font/londrina_solid_regular"
             android:gravity="center"
-            android:text="@string/next"
-            android:visibility="invisible"
+            android:text="@string/save"
+            android:visibility="visible"
             android:textColor="@color/white"
             android:textSize="16sp" />
     </FrameLayout>

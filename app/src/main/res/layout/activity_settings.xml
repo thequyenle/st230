@@ -14,83 +14,73 @@
         android:scaleType="centerCrop"
         android:background="@drawable/bg_app"/>
 
-    <!-- layoutActionBar -->
-    <FrameLayout
-        android:id="@+id/layoutActionBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
 
-        <include
-            android:id="@+id/actionBar"
-            layout="@layout/layout_actionbar" />
-    </FrameLayout>
-
-
-
-    <FrameLayout
-        android:id="@+id/layoutMusic"
-        android:layout_width="142dp"
-        android:layout_height="137dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/bg_music"
+    <TextView
+        android:id="@+id/btnActionBarLeft"
+        android:layout_width="44dp"
+        android:elevation="1dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/ic_back_setting"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvLang"
+        app:layout_constraintBottom_toBottomOf="@id/tvLang"
+        />
+
+
+    <!-- LANGUAGE title (overlapping card top) -->
+    <TextView
+        android:id="@+id/tvLang"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="66dp"
+        android:elevation="1dp"
+        android:background="@drawable/bg_text_lang"
+        android:fontFamily="@font/cherry_bomb_regular"
+        android:gravity="center"
+        android:text="@string/language"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintDimensionRatio="164:56"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/layoutActionBar"
-        >
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/tvMusic"
-            style="@style/single_marquee"
-            android:drawableStart="@drawable/ic_music"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="Music"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center|top"
-            android:gravity="center"
-            android:textSize="22sp"
-            android:text="@string/music"
-            android:textColor="@color/app"
-            android:fontFamily="@font/lobster14"
-            />
-
-
-        <ImageView
-            android:id="@+id/btnMusic"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center"
-            android:layout_width="97dp"
-            android:scaleType="centerInside"
-            android:layout_height="43dp"
-            android:src="@drawable/ic_sw_on"
-            />
-        
-        
-    </FrameLayout>
-
-
-
+    <!-- White card container -->
+    <LinearLayout
+        android:id="@+id/cardContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="94dp"
+        android:background="@drawable/bg_card_language"
+        android:orientation="vertical"
+        android:elevation="0dp"
+        android:paddingBottom="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="8dp"
-        android:paddingHorizontal="16dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:paddingHorizontal="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/layoutMusic">
+        app:layout_constraintTop_toBottomOf="@id/layoutActionBar"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="48dp"
             android:orientation="vertical">
 
             <!--            btnLang-->
             <LinearLayout
                 android:id="@+id/btnLang"
                 android:layout_width="match_parent"
-                android:layout_height="58dp"
+                android:layout_height="56dp"
                 android:background="@drawable/bg_language_selected"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
@@ -115,7 +105,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginStart="10dp"
                     android:layout_weight="8"
-                    android:fontFamily="@font/lobster14"
+                    android:fontFamily="@font/cherry_bomb_regular"
                     android:gravity="center_vertical"
                     android:text="@string/language"
                     android:textColor="@color/white"
@@ -161,7 +151,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginStart="10dp"
                     android:layout_weight="8"
-                    android:fontFamily="@font/lobster14"
+                    android:fontFamily="@font/cherry_bomb_regular"
                     android:gravity="center_vertical"
                     android:text="@string/rate_us"
                     android:textColor="@color/white"
@@ -206,7 +196,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginStart="10dp"
                     android:layout_weight="8"
-                    android:fontFamily="@font/lobster14"
+                    android:fontFamily="@font/cherry_bomb_regular"
                     android:gravity="center_vertical"
                     android:text="@string/share_app"
                     android:textColor="@color/white"
@@ -250,7 +240,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginStart="10dp"
                     android:layout_weight="8"
-                    android:fontFamily="@font/lobster14"
+                    android:fontFamily="@font/cherry_bomb_regular"
                     android:gravity="center_vertical"
                     android:text="@string/privacy_policy"
                     android:textColor="@color/white"
@@ -268,6 +258,8 @@
         </LinearLayout>
 
     </ScrollView>
+
+    </LinearLayout>
 
     <!--    &lt;!&ndash;    flBanner&ndash;&gt;-->
     <!--    <FrameLayout-->

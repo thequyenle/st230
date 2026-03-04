@@ -84,7 +84,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/generate"
-            android:fontFamily="@font/lobster14"
+            android:fontFamily="@font/cherry_bomb_regular"
             android:textColor="@color/app"
             style="@style/single_marquee"
             android:layout_marginEnd="30dp"

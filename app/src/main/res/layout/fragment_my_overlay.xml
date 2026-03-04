@@ -38,7 +38,7 @@
             style="@style/single_marquee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/lobster14"
+            android:fontFamily="@font/cherry_bomb_regular"
             android:gravity="center"
             android:paddingHorizontal="33dp"
             android:paddingVertical="12dp"

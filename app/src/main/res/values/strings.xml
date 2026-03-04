@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name" translatable="false">Pony OC: Pony Avatar Maker</string>
+    <string name="app_name" translatable="false">Dress game</string>
 
 
     <string name="go_to_setting_message">The app needs this permission</string>
@@ -8,16 +8,16 @@
     <string name="this_action_can_contain_ads">This action can contain ads</string>
     <string name="not_select_lang">Please select a language</string>
     <string name="next">Next</string>
-    <string name="language">Language</string>
+    <string name="language">LANGUAGE</string>
 
-    <string name="title_1">Make Your Perfect Pride</string>
-    <string name="title_2">Character Diversity</string>
-    <string name="title_3">Variety of Items</string>
+    <string name="title_1">Create your own avatar however you like</string>
+    <string name="title_2">Diverse Unique Categories</string>
+    <string name="title_3">Great Variety Of Items</string>
 
-    <string name="permission">Permission</string>
-    <string name="storage">Storage</string>
+    <string name="permission">PERMISSION</string>
+    <string name="storage">STORAGE</string>
     <string name="continue_per">Continue</string>
-    <string name="notification">Notification</string>
+    <string name="notification">NOTIFICATION</string>
     <string name="no_internet">No Internet</string>
     <string name="granted_notification">Notification permission granted</string>
     <string name="granted_storage">Storage permission granted</string>
@@ -173,4 +173,9 @@
     <string name="pride_select_at_least_one">Please select at least one flag</string>
     <string name="pride_max_colors_reached">Maximum 10 colors allowed</string>
     <string name="my_pride">My Pride</string>
+    <string name="play">PLAY</string>
+    <string name="lucki_roll">LUCKY ROLL</string>
+    <string name="quick_mix">QUICK MIX</string>
+    <string name="creation">CREATION</string>
+    <string name="back">BACK</string>
 </resources>

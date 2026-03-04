@@ -27,7 +27,7 @@ class SettingsActivity : BaseActivity<ActivitySettingsBinding>() {
     }
 
     override fun initView() {
-        binding.tvMusic.select()
+       // binding.tvMusic.select()
         initRate()
         initMusic()
     }
@@ -37,9 +37,9 @@ class SettingsActivity : BaseActivity<ActivitySettingsBinding>() {
     }
 
     private fun updateMusicUI(isEnabled: Boolean) {
-        binding.btnMusic.setImageResource(
-            if (isEnabled) R.drawable.ic_sw_on else R.drawable.ic_sw_off_ms
-        )
+      //  binding.btnMusic.setImageResource(
+//            if (isEnabled) R.drawable.ic_sw_on else R.drawable.ic_sw_off_ms
+//        )
     }
 
     private fun toggleMusic() {
@@ -55,8 +55,8 @@ class SettingsActivity : BaseActivity<ActivitySettingsBinding>() {
 
     override fun viewListener() {
         binding.apply {
-            actionBar.btnActionBarLeft.tap { handleBackLeftToRight() }
-            layoutMusic.tap { toggleMusic() }
+           btnActionBarLeft.tap { handleBackLeftToRight() }
+        //    layoutMusic.tap { toggleMusic() }
             btnLang.tap { startIntentRightToLeft(LanguageActivity::class.java, IntentKey.INTENT_KEY) }
             btnShareApp.tap(1500) { shareApp() }
             btnRate.tap {
@@ -72,14 +72,14 @@ class SettingsActivity : BaseActivity<ActivitySettingsBinding>() {
     }
 
     override fun initText() {
-        binding.actionBar.tvCenter.select()
+        //binding.actionBar.tvCenter.select()
     }
 
     override fun initActionBar() {
-        binding.actionBar.apply {
-            setImageActionBar(btnActionBarLeft, R.drawable.ic_back)
-            setTextActionBar(tvCenter, getString(R.string.settings))
-        }
+//        binding.actionBar.apply {
+//            setImageActionBar(btnActionBarLeft, R.drawable.ic_back)
+//            setTextActionBar(tvCenter, getString(R.string.settings))
+//        }
     }
 
     private fun initRate() {

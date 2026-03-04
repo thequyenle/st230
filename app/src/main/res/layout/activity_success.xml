@@ -53,7 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/lobster14"
+        android:fontFamily="@font/cherry_bomb_regular"
         android:gravity="center"
         android:text="@string/image_has_been_saved_successfully"
         android:textColor="#AB5BFF"

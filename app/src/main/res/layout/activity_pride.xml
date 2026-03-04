@@ -59,7 +59,7 @@
             android:id="@+id/tvStepCounter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/lobster14"
+            android:fontFamily="@font/cherry_bomb_regular"
             android:textSize="16sp"
             android:textColor="#4A90E2"
             android:layout_marginTop="14dp"
@@ -69,7 +69,7 @@
             android:id="@+id/tvStepLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/lobster14"
+            android:fontFamily="@font/cherry_bomb_regular"
             android:textSize="16sp"
             android:layout_marginTop="8dp"
             android:textColor="#4A90E2"
@@ -148,7 +148,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/lobster14"
+                            android:fontFamily="@font/cherry_bomb_regular"
                             android:textSize="15sp"
                             android:textColor="#4A90E2"
                             android:layout_marginTop="10dp"
@@ -204,7 +204,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/lobster14"
+                        android:fontFamily="@font/cherry_bomb_regular"
                         android:textSize="16sp"
                         android:textColor="#4A90E2"
                         android:text="@string/pride_click_to_select_different" />
@@ -231,7 +231,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/lobster14"
+                        android:fontFamily="@font/cherry_bomb_regular"
                         android:textSize="16sp"
                         android:textColor="#F44336"
                         android:text="@string/pride_no_image_uploaded" />
@@ -275,7 +275,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/lobster14"
+                        android:fontFamily="@font/cherry_bomb_regular"
                         android:textSize="12sp"
                         android:textColor="@color/white"
                         android:text="@string/reset" />
@@ -297,7 +297,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/lobster14"
+                        android:fontFamily="@font/cherry_bomb_regular"
                         android:textSize="12sp"
                         android:textColor="@color/white"
                         android:text="@string/pride_center" />
@@ -370,7 +370,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/lobster14"
+                        android:fontFamily="@font/cherry_bomb_regular"
                         android:textSize="13sp"
                         android:textColor="#555555"
                         android:text="@string/pride_selected_flags" />
@@ -388,7 +388,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/lobster14"
+                    android:fontFamily="@font/cherry_bomb_regular"
                     android:textSize="16sp"
                     android:textColor="#222222"
                     android:text="@string/pride_my_custom"
@@ -410,7 +410,7 @@
                         android:background="@drawable/plus"
                         android:textSize="28sp"
                         android:textColor="#AAAAAA"
-                        android:fontFamily="@font/lobster14" />
+                        android:fontFamily="@font/cherry_bomb_regular" />
 
                 </LinearLayout>
 
@@ -429,7 +429,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/lobster14"
+                    android:fontFamily="@font/cherry_bomb_regular"
                     android:textSize="16sp"
                     android:textColor="#222222"
                     android:text="@string/pride_flags_section"
@@ -501,7 +501,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/lobster14"
+                            android:fontFamily="@font/cherry_bomb_regular"
                             android:textSize="16sp"
                             android:textColor="#222222"
                             android:text="@string/pride_layout_circle" />
@@ -545,7 +545,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/lobster14"
+                            android:fontFamily="@font/cherry_bomb_regular"
                             android:textSize="16sp"
                             android:textColor="#222222"
                             android:text="@string/pride_layout_square" />
@@ -589,7 +589,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/lobster14"
+                            android:fontFamily="@font/cherry_bomb_regular"
                             android:textSize="16sp"
                             android:textColor="#222222"
                             android:text="@string/pride_layout_background" />
@@ -646,7 +646,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/lobster14"
+                    android:fontFamily="@font/cherry_bomb_regular"
                     android:textSize="14sp"
                     android:textColor="#000000"
                     android:text="@string/pride_image_zoom"
@@ -671,7 +671,7 @@
                     android:id="@+id/tvRingScaleLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/lobster14"
+                    android:fontFamily="@font/cherry_bomb_regular"
                     android:textSize="14sp"
                     android:textColor="#000000"
                     android:text="@string/image_scale"
@@ -708,7 +708,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/lobster14"
+                            android:fontFamily="@font/cherry_bomb_regular"
                             android:textSize="12sp"
                             android:textColor="#AB5BFF"
                             android:gravity="center"
@@ -726,7 +726,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/lobster14"
+                            android:fontFamily="@font/cherry_bomb_regular"
                             android:textSize="12sp"
                             android:textColor="#AB5BFF"
                             android:gravity="center"
@@ -744,7 +744,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/lobster14"
+                            android:fontFamily="@font/cherry_bomb_regular"
                             android:textSize="12sp"
                             android:textColor="#AB5BFF"
                             android:gravity="center"
@@ -765,7 +765,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/lobster14"
+                        android:fontFamily="@font/cherry_bomb_regular"
                         android:textSize="12sp"
                         android:textColor="#222222"
                         android:layout_marginStart="0dp"
@@ -835,7 +835,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/lobster14"
+                            android:fontFamily="@font/cherry_bomb_regular"
                             android:textSize="15sp"
                             android:textColor="@color/white"
                             android:text="@string/download" />
@@ -851,7 +851,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/lobster14"
+                            android:fontFamily="@font/cherry_bomb_regular"
                             android:textSize="15sp"
                             android:textColor="#D93F8B"
                             android:text="@string/pride_create_another" />
@@ -868,7 +868,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/lobster14"
+                        android:fontFamily="@font/cherry_bomb_regular"
                         android:textSize="15sp"
                         android:textColor="@color/white"
                         android:text="@string/pride_pfp_overlay" />
@@ -898,7 +898,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="@font/lobster14"
+            android:fontFamily="@font/cherry_bomb_regular"
             android:textSize="14sp"
             android:textColor="#B3B3B3"
             android:drawablePadding="4dp"
@@ -911,7 +911,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="@font/lobster14"
+            android:fontFamily="@font/cherry_bomb_regular"
             android:textSize="14sp"
             android:textColor="#B3B3B3"
             android:gravity="start"
@@ -930,7 +930,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/lobster14"
+                android:fontFamily="@font/cherry_bomb_regular"
                 android:textSize="14sp"
                 android:layout_gravity="center"
                 android:gravity="start"

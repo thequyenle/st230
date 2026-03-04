@@ -20,11 +20,9 @@
         android:layout_height="68sp"
         android:maxLines="2"
         android:layout_marginHorizontal="16dp"
-        android:fontFamily="@font/lobster14"
+        android:fontFamily="@font/cherry_bomb_regular"
         android:gravity="center"
-        app:outerStrokeColor="@color/app"
-        app:outerStrokeWidth="4dp"
         android:textColor="@color/white"
-        android:textSize="28sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

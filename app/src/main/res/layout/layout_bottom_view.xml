@@ -65,7 +65,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="6dp"
-                    android:fontFamily="@font/lobster14"
+                    android:fontFamily="@font/cherry_bomb_regular"
                     android:text="@string/share"
                     android:textColor="@color/white"
                     android:textSize="16sp" />
@@ -123,7 +123,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="6dp"
-                    android:fontFamily="@font/lobster14"
+                    android:fontFamily="@font/cherry_bomb_regular"
                     android:text="@string/download"
                     android:textColor="@color/white"
                     android:textSize="16sp" />
@@ -167,7 +167,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="6dp"
                 android:layout_marginStart="14dp"
-                android:fontFamily="@font/lobster14"
+                android:fontFamily="@font/cherry_bomb_regular"
                 android:text="@string/delete"
                 android:textColor="#D20000"
                 android:textSize="16sp" />

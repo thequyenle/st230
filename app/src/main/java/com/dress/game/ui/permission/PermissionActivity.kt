@@ -54,15 +54,15 @@ class PermissionActivity : BaseActivity<ActivityPermissionBinding>() {
     }
 
     override fun initText() {
-        binding.actionBar.tvCenter.select()
+       // binding.actionBar.tvCenter.select()
         val textRes = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) R.string.to_access_13 else R.string.to_access
 
         binding.txtPer.text = TextUtils.concat(
-            createColoredText(R.string.allow, R.color.app),
+            createColoredText(R.string.allow, R.color.white),
             " ",
-            createColoredText(R.string.app_name, R.color.app),
+            createColoredText(R.string.app_name, R.color.white),
             " ",
-            createColoredText(textRes, R.color.app)
+            createColoredText(textRes, R.color.white)
         )
     }
 
@@ -167,16 +167,16 @@ class PermissionActivity : BaseActivity<ActivityPermissionBinding>() {
 
 
     override fun initActionBar() {
-        binding.actionBar.tvCenter.apply {
-            text = getString(R.string.permission)
-            visible()
-        }
+//        binding.actionBar.tvCenter.apply {
+//            text = getString(R.string.permission)
+//            visible()
+//        }
     }
 
     private fun createColoredText(
         @androidx.annotation.StringRes textRes: Int,
         @androidx.annotation.ColorRes colorRes: Int,
-        font: Int = R.font.lobster14
+        font: Int = R.font.cherry_bomb_regular
     ) = StringHelper.changeColor(this, getString(textRes), colorRes, font)
 
     private fun handleContinue() {

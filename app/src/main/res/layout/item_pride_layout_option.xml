@@ -27,7 +27,7 @@
             android:id="@+id/tvLayoutTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/lobster14"
+            android:fontFamily="@font/cherry_bomb_regular"
             android:textSize="16sp"
             android:textColor="#222222" />
 
@@ -35,7 +35,7 @@
             android:id="@+id/tvLayoutDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/lobster14"
+            android:fontFamily="@font/cherry_bomb_regular"
             android:textSize="12sp"
             android:textColor="#777777"
             android:layout_marginTop="2dp" />

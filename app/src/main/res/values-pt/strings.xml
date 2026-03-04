@@ -172,4 +172,9 @@
     <string name="pride_select_at_least_one">Por favor, selecione pelo menos uma bandeira</string>
     <string name="pride_max_colors_reached">Máximo de 10 cores permitidas</string>
     <string name="my_pride">Meu Orgulho</string>
+    <string name="play">PLAY</string>
+    <string name="lucki_roll">LUCKY ROLL</string>
+    <string name="quick_mix">QUICK MIX</string>
+    <string name="creation">CREATION</string>
+    <string name="back">BACK</string>
 </resources>

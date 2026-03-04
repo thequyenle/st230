@@ -10,6 +10,7 @@ import com.lvt.ads.util.Admob
 import com.dress.game.R
 import com.dress.game.core.base.BaseActivity
 import com.dress.game.core.extensions.handleBackLeftToRight
+import com.dress.game.core.extensions.invisible
 import com.dress.game.core.extensions.select
 import com.dress.game.core.extensions.startIntentRightToLeft
 import com.dress.game.core.extensions.startIntentWithClearTop
@@ -38,6 +39,7 @@ class LanguageActivity : BaseActivity<ActivityLanguageBinding>() {
         val currentLang = sharePreference.getPreLanguage()
         viewModel.setFirstLanguage(intentValue == null)
         viewModel.loadLanguages(currentLang)
+
     }
 
     override fun dataObservable() {
@@ -47,12 +49,11 @@ class LanguageActivity : BaseActivity<ActivityLanguageBinding>() {
                     viewModel.isFirstLanguage.collect { isFirst ->
                         languageAdapter.isFirstLanguage = isFirst
                         if (isFirst) {
-                            binding.actionBar.tvStart.visible()
-
+                            binding.btnDone.invisible()
                         } else {
-                            binding.actionBar.btnActionBarLeft.visible()
-                            binding.actionBar.tvCenter.visible()
-
+                            binding.btnDone.invisible()
+                            binding.btnBackLangSetting.visible()
+                            binding.btnDoneLangSetting.visible()
                         }
                     }
                 }
@@ -63,8 +64,8 @@ class LanguageActivity : BaseActivity<ActivityLanguageBinding>() {
                 }
                 launch {
                     viewModel.codeLang.collect { code ->
-                        if (code.isNotEmpty()) {
-                            binding.actionBar.btnActionBarRightLang.visible()
+                        if (code.isNotEmpty() && viewModel.isFirstLanguage.value) {
+                            binding.btnDone.visible()
                         }
                     }
                 }
@@ -74,21 +75,22 @@ class LanguageActivity : BaseActivity<ActivityLanguageBinding>() {
 
     override fun viewListener() {
         binding.apply {
-            actionBar.btnActionBarLeft.tap { handleBackLeftToRight() }
-            actionBar.btnActionBarRightLang.tap { handleDone() }
+            btnBackLangSetting.tap { handleBackLeftToRight() }
+            btnDone.tap { handleDone() }
+            btnDoneLangSetting.tap { handleDone() }
         }
         handleRcv()
     }
 
     override fun initText() {
-        binding.actionBar.tvCenter.select()
+        // binding.actionBar.tvCenter.select()
         //binding.actionBar.tvStart.select()
     }
 
     override fun initActionBar() {
 //        binding.actionBar.apply {
 //            btnActionBarLeft.setImageResource(R.drawable.ic_back)
-//            btnActionBarRightLang.setImageResource(R.drawable.ic_done)
+//            btnDone.setImageResource(R.drawable.ic_done)
 //            val text = R.string.language
 //            tvCenter.text = strings(text)
 //            tvStart.text = strings(text)
@@ -105,7 +107,7 @@ class LanguageActivity : BaseActivity<ActivityLanguageBinding>() {
     private fun handleRcv() {
         binding.apply {
             languageAdapter.onItemClick = { code ->
-                binding.actionBar.btnActionBarRightLang.visible()
+                //  binding.actionBar.btnDone.visible()
                 viewModel.selectLanguage(code)
             }
         }
