@@ -99,12 +99,12 @@
     <string name="enter_your_package_name">Enter your package name</string>
     <string name="please_enter_your_package_name">Please enter your package name!</string>
     <string name="background">Background</string>
-    <string name="image">Image</string>
-    <string name="color">Color</string>
+    <string name="image">IMAGE</string>
+    <string name="color">COLOR</string>
     <string name="add_image">Add Image</string>
     <string name="sticker">Sticker</string>
     <string name="speech_bubbles">Speech Bubbles</string>
-    <string name="text">Text</string>
+    <string name="text">Input text</string>
     <string name="type_your_content">Type your content...</string>
     <string name="font">Font</string>
     <string name="choose_color">Choose Color</string>
@@ -178,4 +178,5 @@
     <string name="quick_mix">QUICK MIX</string>
     <string name="creation">CREATION</string>
     <string name="back">BACK</string>
+    <string name="hello_world_hint">Hello World !!</string>
 </resources>

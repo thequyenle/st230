@@ -111,7 +111,7 @@ class ChooseCharacterActivity : BaseActivity<ActivityChooseCharacterBinding>() {
 
     override fun viewListener() {
         binding.apply {
-            actionBar.btnActionBarLeft.tap { showInterAll { handleBackLeftToRight() } }
+            actionBar.btnActionBarLeftText.tap { showInterAll { handleBackLeftToRight() } }
         }
         chooseCharacterAdapter.onItemClick = { position ->
             AdmobEvent.logEvent(this@ChooseCharacterActivity, "click_item_$position", null)
@@ -169,9 +169,9 @@ class ChooseCharacterActivity : BaseActivity<ActivityChooseCharacterBinding>() {
 
     override fun initActionBar() {
         binding.actionBar.apply {
-            setImageActionBar(btnActionBarLeft, R.drawable.ic_back)
-            setTextActionBar(tvCenter, getString(R.string.pride_maker))
-            tvCenter.select()
+            btnActionBarLeftText.visible()
+//            setTextActionBar(tvCenter, getString(R.string.pride_maker))
+//            tvCenter.select()
         }
     }
 

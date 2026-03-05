@@ -29,6 +29,10 @@
     <style name="BaseDialog" parent="Theme.AppCompat.Light.Dialog.Alert" tools:keep="@style/BaseDialog">
         <item name="android:windowBackground">@android:color/transparent</item>
     </style>
+    <style name="RoundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">25dp</item>
+    </style>
 
     <style name="Theme.BaseProject" parent="Base.Theme.BaseProject" />
 </resources>

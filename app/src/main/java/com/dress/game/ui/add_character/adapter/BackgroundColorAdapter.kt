@@ -26,7 +26,7 @@ class BackgroundColorAdapter :
             if (position == 0) {
                 vFocus.setBackgroundResource(R.drawable.bg_stroke_gradient_circle)
             } else {
-                vFocus.setBackgroundResource(R.drawable.bg_stroke_color)
+                vFocus.setBackgroundResource(R.drawable.bg_stroke_gradient_circle)
             }
 
             if (position == 0) {

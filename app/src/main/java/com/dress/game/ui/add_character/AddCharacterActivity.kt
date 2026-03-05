@@ -131,6 +131,7 @@ class AddCharacterActivity : BaseActivity<ActivityAddCharacterBinding>() {
     }
 
     override fun initView() {
+        binding.actionBar.btnActionBarLeftText.visible()
         viewModel.layoutParams = binding.flFunction.layoutParams as ViewGroup.MarginLayoutParams
         viewModel.originalMarginBottom = viewModel.layoutParams.topMargin  // Capture initial topMargin
         initRcv()
@@ -307,9 +308,9 @@ class AddCharacterActivity : BaseActivity<ActivityAddCharacterBinding>() {
     override fun viewListener() {
         binding.apply {
             actionBar.apply {
-                btnActionBarLeft.tap { confirmExit() }
+                btnActionBarLeftText.tap { confirmExit() }
                 btnActionBarCenter.tap { confirmReset() }
-                btnActionBarRight.tap {
+                btnActionBarRightText.tap {
                     handleSave()
                 }
             }
@@ -388,10 +389,8 @@ class AddCharacterActivity : BaseActivity<ActivityAddCharacterBinding>() {
 
     override fun initActionBar() {
         binding.actionBar.apply {
-            setImageActionBar(btnActionBarLeft, R.drawable.ic_back)
             setImageActionBar(btnActionBarCenter, R.drawable.ic_reset)
-            setImageActionBar(btnActionBarRight, R.drawable.ic_next)
-            btnActionBarRight.visible()
+            btnActionBarRightText.visible()
 
             // Căn giữa nút reset vào guideline
             val params = btnActionBarCenter.layoutParams as androidx.constraintlayout.widget.ConstraintLayout.LayoutParams
@@ -659,7 +658,7 @@ class AddCharacterActivity : BaseActivity<ActivityAddCharacterBinding>() {
         tabView.layoutParams = params
 
         // Set text size = 18sp
-        textView.textSize = 16f
+        textView.textSize = 14f
 
         // Apply gradient color from top to bottom - WHITE gradient for selected
         textView.setTextColor(Color.parseColor("#FFFFFF"))
@@ -687,10 +686,10 @@ class AddCharacterActivity : BaseActivity<ActivityAddCharacterBinding>() {
         tabView.layoutParams = params
 
         // Set text size = 14sp, color = colorPrimary
-        textView.textSize = 16f
+        textView.textSize = 14f
 
         // Apply RED gradient for unselected
-        textView.setTextColor(Color.parseColor("#AB5BFF"))
+        textView.setTextColor(Color.parseColor("#FFFFFF"))
 
 
         // Show un_selected_tab drawable

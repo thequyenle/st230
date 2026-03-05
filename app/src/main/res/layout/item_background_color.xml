@@ -15,19 +15,28 @@
 
         <!--        vFocus-->
         <View
+            android:id="@+id/vNotFocus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:visibility="visible"
+            android:background="@drawable/bg_stroke_color_bg" />
+
+        <!--        vFocus-->
+        <View
             android:id="@+id/vFocus"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="2.5dp"
             android:visibility="gone"
-            android:background="@drawable/bg_stroke_color" />
+            android:background="@drawable/bg_stroke_gradient_circle" />
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="4.5dp"
             app:cardBackgroundColor="@color/transparent"
-            app:cardCornerRadius="99dp"
+            app:cardCornerRadius="2dp"
             app:strokeColor="@color/transparent"
             app:cardElevation="0dp">
 
